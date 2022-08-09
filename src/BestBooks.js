@@ -16,7 +16,7 @@ class BestBooks extends React.Component {
   
   // http://localhost:3001/books
   componentDidMount= async()=>{
-    const url=`${process.env.REACT_APP_HEROKU}/books`;
+    const url=`http://localhost:3001/books`;
     let booksdata= await axios.get(url);
     // console.log(booksdata.data);
     this.setState({
